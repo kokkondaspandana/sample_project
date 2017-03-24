@@ -1,0 +1,8 @@
+N,M=map(int,raw_input().split())
+rows = [raw_input() for i in range(N)]
+K = int(raw_input())
+
+for row in sorted(rows, key=lambda row: int(row.split()[K])):
+    print(row)
+
+
